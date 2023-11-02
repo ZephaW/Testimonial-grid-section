@@ -14,7 +14,7 @@ body {
 .info {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 20px;
   /* flex-direction: row; */
 }
 
@@ -23,12 +23,13 @@ body {
 }
 
    .SOB {
-    position: relative;
-    justify-content:space-around;
+   
+    /* justify-content:space-around; */
     display: flex;
     flex-wrap: wrap;
    width: 150vh;
    height: 70vh;
+   gap: 20px;
    }
 
    .pp {
@@ -64,7 +65,12 @@ body {
 
   #daniel .intro {
     color: hsl(0, 0%, 100%);
-    opacity: 70%;
+    
+  }
+
+  #daniel .review {
+    color: hsl(0, 0%, 100%);
+    opacity: 0.7;
   }
 
   /* -----------jonathan--------- */
@@ -89,6 +95,11 @@ body {
   
   #jonathan .intro {
     color: hsl(0, 0%, 100%);
+   
+  }
+
+  #jonathan .review {
+    color: hsl(0, 0%, 100%);
     opacity: 70%;
   }
 
@@ -100,6 +111,7 @@ body {
     padding: 20px;
     width: 20%;
     max-width: 37.5vh; 
+    flex-grow: auto;
     height: 70vh; /* Set height to 100% */
   }
 
@@ -112,7 +124,12 @@ body {
   }
 
   #kira .intro {
-    opacity: 70%;
+    color: #000000;;
+  }
+
+  #kira .review {
+    color: #000000;;
+    opacity: 0.7;
   }
   
 
@@ -124,6 +141,8 @@ body {
     width: 20%;
     align-self:flex-start ;
     height: 35vh;;
+    position: relative;
+    bottom: 215px;
   }
 
   #jeanette.name {
@@ -137,6 +156,11 @@ body {
 
   #jeanette .intro {
     color: #000000;
+    
+  }
+
+  #jeanette .review {
+    color: #000000;
     opacity: 70%;
   }
   
@@ -145,11 +169,13 @@ body {
   
   #patrick {
     background-color: hsl(219, 29%, 14%);
-    border-radius: 20px; /* Removed extra semicolon */
+    border-radius: 20px;
     padding: 20px;
     width:40%;
-  align-self: flex-start;
+  align-self: flex-end;
     height: 35vh;
+    position: relative;
+    bottom: 215px;
   }
 
   #patrick .name {
@@ -161,7 +187,11 @@ body {
     opacity: 0.5;
   }
 
-  #patrick .intro {
+#patrick.intro {
+  color: hsl(0, 0%, 100%);
+}
+
+  #patrick .review {
     
       color: hsl(0, 0%, 100%);
       opacity: 70%;
