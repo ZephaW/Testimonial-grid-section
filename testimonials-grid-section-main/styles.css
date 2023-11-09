@@ -1,199 +1,94 @@
 body {
-    display: flex;
-    justify-content:center ;
-    align-items: center;
-    font-size: 13px;
-    background-color: #DADFEA;
-    height: 100vh;
-    width: 100%;
-    font-weight: 500, 600;
-    
-  }
+  background-color: aliceblue;
+  display: flex;
+
+}
+
+
+.testimonial-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 100px;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+
   
+}
+
+.graduate.grid-col-span-2 {
+  grid-column: span 2;
+}
+
+
+.verification {
+  opacity: 0.5;
+}
+
+.review {
+  opacity: 0.7;
+}
 
 .info {
   display: flex;
+  gap: 1rem;
   align-items: center;
-  gap: 20px;
-  /* flex-direction: row; */
+
 }
 
-.text {
-  flex: 1;
+.pp {
+border-radius: 50%;
+width: 50px;
+height: 50px;
+
 }
 
-   .SOB {
-   
-    /* justify-content:space-around; */
-    display: flex;
-    flex-wrap: wrap;
-   width: 150vh;
-   height: 70vh;
-   gap: 20px;
-   }
+.graduate {
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+/* -----graduates------ */
 
-   .pp {
-    border-radius: 50%;
-    
-   }
-  
-  .graduate {
-    border-radius: 20px; /* Removed extra semicolon */
-    padding: 20px;
-    
-    height: 150px;
-  }
-  
-  /* -----------daniel--------- */
-  #daniel {
-    background-color: hsl(263, 55%, 52%);
-    border-radius: 20px;
-    padding: 20px;
-    width:40%;
-    max-width: 75vh;
-    height: 35vh;
-  }
+#daniel {
+  background-color: hsl(263, 55%, 52%);
+ 
+}
 
-   #daniel .name {
-    color: hsl(0, 0%, 100%);
-  }
-
-   #daniel .verification {
-    color: hsl(0, 0%, 100%);
-    opacity: 0.5;
-  }
-
-  #daniel .intro {
-    color: hsl(0, 0%, 100%);
-    
-  }
-
-  #daniel .review {
-    color: hsl(0, 0%, 100%);
-    opacity: 0.7;
-  }
-
-  /* -----------jonathan--------- */
-  #jonathan {
-    background-color: hsl(217, 19%, 35%);
-    border-radius: 20px; /* Removed extra semicolon */
-    padding: 20px;
-    width: 20%;
-    max-width: 37.5vh;
-    
-    height: 35vh;
-  }
-
-  #jonathan .name {
-    color: hsl(0, 0%, 100%);
-  }
-
-   #jonathan .verification {
-    color: hsl(0, 0%, 100%);
-    opacity: 0.5;
-  }
-  
-  #jonathan .intro {
-    color: hsl(0, 0%, 100%);
-   
-  }
-
-  #jonathan .review {
-    color: hsl(0, 0%, 100%);
-    opacity: 70%;
-  }
-
-   /* -----------kira--------- */
-
-  #kira {
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 20px; /* Removed extra semicolon */
-    padding: 20px;
-    width: 20%;
-    max-width: 37.5vh; 
-    flex-grow: auto;
-    height: 70vh; /* Set height to 100% */
-  }
-
-  #kira.name {
-    color: #000000;;
-  }
-
-  #kira .verification {
-    opacity: 0.5;
-  }
-
-  #kira .intro {
-    color: #000000;;
-  }
-
-  #kira .review {
-    color: #000000;;
-    opacity: 0.7;
-  }
-  
-
-   /* -----------jeanette--------- */
-  #jeanette {
-    background-color:hsl(0, 0%, 100%);
-    border-radius: 20px; /* Removed extra semicolon */
-    padding: 20px;
-    width: 20%;
-    align-self:flex-start ;
-    height: 35vh;;
-    position: relative;
-    bottom: 215px;
-  }
-
-  #jeanette.name {
-    color: #000000;
-  }
-
-  #jeanette .verification {
-    color: #000000;
-    opacity: 0.5;
-  }
-
-  #jeanette .intro {
-    color: #000000;
-    
-  }
-
-  #jeanette .review {
-    color: #000000;
-    opacity: 70%;
-  }
-  
-   /* -----------patrick--------- */
-  
-  
-  #patrick {
-    background-color: hsl(219, 29%, 14%);
-    border-radius: 20px;
-    padding: 20px;
-    width:40%;
-  align-self: flex-end;
-    height: 35vh;
-    position: relative;
-    bottom: 215px;
-  }
-
-  #patrick .name {
-    color: hsl(0, 0%, 100%);
-  }
-
-   #patrick .verification {
-    color: hsl(0, 0%, 100%);
-    opacity: 0.5;
-  }
-
-#patrick.intro {
+#daniel .text, #daniel .intro, #daniel .review {
   color: hsl(0, 0%, 100%);
 }
 
-  #patrick .review {
-    
-      color: hsl(0, 0%, 100%);
-      opacity: 70%;
-    }
-  
+
+#jonathan {
+  background-color:hsl(217, 19%, 35%);
+}
+
+#jonathan .text, #jonathan .intro, #jonathan .review {
+  color: hsl(0, 0%, 100%);
+}
+
+
+
+#kira {
+  background-color:hsl(0, 0%, 100%);
+  grid-row-end: span 2;
+}
+
+#jeanette {
+  background-color:hsl(0, 0%, 100%);
+}
+
+
+
+#patrick {
+  background-color: hsl(219, 29%, 14%);
+}
+
+#patrick .text, #patrick .intro, #patrick .review {
+  color: hsl(0, 0%, 100%);
+}
+
