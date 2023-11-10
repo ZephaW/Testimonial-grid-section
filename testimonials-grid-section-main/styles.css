@@ -8,7 +8,14 @@ body {
 .testimonial-grid {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-auto-columns: 1fr;
+  grid-template-areas: 
+  'one'
+  'two'
+  'three'
+  'four'
+  'five';
+
   padding: 100px;
 }
 
@@ -55,6 +62,7 @@ height: 50px;
 
 #daniel {
   background-color: hsl(263, 55%, 52%);
+  
  
 }
 
@@ -76,19 +84,86 @@ height: 50px;
 #kira {
   background-color:hsl(0, 0%, 100%);
   grid-row-end: span 2;
+  grid-column-start: 4;
+  grid-column-end: 5;
 }
 
 #jeanette {
   background-color:hsl(0, 0%, 100%);
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
 
 
 #patrick {
   background-color: hsl(219, 29%, 14%);
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 
 #patrick .text, #patrick .intro, #patrick .review {
   color: hsl(0, 0%, 100%);
 }
 
+
+/* grid areas for testimonials */
+/* #daniel {
+  grid-area: one;
+}
+
+#jonathan {
+  grid-area: two;
+}
+
+#kira {
+  grid-area: three;
+}
+
+#jeanette {
+  grid-area: four;
+}
+
+#patrick {
+  grid-area: five;
+} */
+
+
+
+/* media queries for responsiveness  */
+@media screen and (min-width: 33em) {
+  .testimonial-grid {
+    grid-template-areas:
+      "one one"
+      "two three"
+      "five five"
+      "four four";
+  }
+}
+
+@media screen and (min-width: 38em) {
+  .testimonial-grid {
+    grid-template-areas:
+      'one one'
+      'two five'
+      'three five'
+      'four four';
+  }
+}
+
+@media screen and (min-width: 54em) {
+  .testimonial-grid {
+    grid-template-areas:
+      "one one two"
+      "five five five"
+      "three four four";
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .testimonial-grid {
+    grid-template-areas:
+      "one one two five"
+      "three four four five";
+  }
+}
