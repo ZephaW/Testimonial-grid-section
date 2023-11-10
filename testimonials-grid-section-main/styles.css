@@ -21,8 +21,8 @@ body {
 
 .container {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center; 
+  align-items: center; 
 
   
 }
@@ -108,7 +108,7 @@ height: 50px;
 
 
 /* grid areas for testimonials */
-/* #daniel {
+#daniel {
   grid-area: one;
 }
 
@@ -126,7 +126,7 @@ height: 50px;
 
 #patrick {
   grid-area: five;
-} */
+}
 
 
 
