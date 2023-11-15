@@ -1,6 +1,11 @@
 body {
   background-color: aliceblue;
   display: flex;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh;
+  max-width: 100rem;
+  
 
 }
 
@@ -16,20 +21,8 @@ body {
   'four'
   'five';
 
-  padding: 100px;
 }
 
-.container {
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-
-  
-}
-
-.graduate.grid-col-span-2 {
-  grid-column: span 2;
-}
 
 
 .verification {
@@ -66,7 +59,7 @@ height: 50px;
  
 }
 
-#daniel .text, #daniel .intro, #daniel .review {
+#daniel .text, #daniel figcaption, #daniel blockquote, #daniel .intro, #daniel .review {
   color: hsl(0, 0%, 100%);
 }
 
@@ -75,10 +68,11 @@ height: 50px;
   background-color:hsl(217, 19%, 35%);
 }
 
-#jonathan .text, #jonathan .intro, #jonathan .review {
+#jonathan .text ,#jonathan figcaption, #jonathan blockquote, #jonathan .review {
   color: hsl(0, 0%, 100%);
 }
 
+ 
 
 
 #kira {
@@ -102,7 +96,7 @@ height: 50px;
   grid-column-end: 4;
 }
 
-#patrick .text, #patrick .intro, #patrick .review {
+#patrick .text, #patrick blockquote, #patrick figcaption, #patrick .intro, #patrick .review {
   color: hsl(0, 0%, 100%);
 }
 
@@ -116,40 +110,25 @@ height: 50px;
   grid-area: two;
 }
 
-#kira {
+#jeanette {
   grid-area: three;
 }
 
-#jeanette {
+#patrick {
   grid-area: four;
 }
 
-#patrick {
+#kira {
   grid-area: five;
 }
 
 
 
-/* media queries for responsiveness  */
-@media screen and (min-width: 33em) {
-  .testimonial-grid {
-    grid-template-areas:
-      "one one"
-      "two three"
-      "five five"
-      "four four";
-  }
-}
 
-@media screen and (min-width: 38em) {
-  .testimonial-grid {
-    grid-template-areas:
-      'one one'
-      'two five'
-      'three five'
-      'four four';
-  }
-}
+
+
+/* media queries for responsiveness  */
+
 
 @media screen and (min-width: 54em) {
   .testimonial-grid {
