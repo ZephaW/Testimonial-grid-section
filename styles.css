@@ -4,7 +4,7 @@ body {
   justify-content: center; 
   align-items: center; 
   min-height: 100vh;
-  max-width: 100rem;
+  
   
 
 }
@@ -13,6 +13,7 @@ body {
 .testimonial-grid {
   display: grid;
   gap: 1.5rem;
+  max-width: 100rem;
   grid-auto-columns: 1fr;
   grid-template-areas: 
   'one'
